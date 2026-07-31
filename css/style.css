@@ -32,6 +32,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -209,8 +210,7 @@ h1, h2, h3, h4 {
 }
 
 .header:not(.scorso) .logo,
-.header:not(.scorso) .nav a,
-.header:not(.scorso) .menu-hamburger span {
+.header:not(.scorso) .nav a {
   color: var(--bianco);
 }
 
@@ -233,6 +233,10 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   gap: 36px;
+}
+
+.nav-azioni-mobile {
+  display: none;
 }
 
 .nav a {
@@ -284,19 +288,28 @@ h1, h2, h3, h4 {
   display: none;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 5px;
   width: 34px;
   height: 34px;
+  min-width: 34px;
+  min-height: 34px;
+  padding: 0;
   cursor: pointer;
   background: none;
   border: none;
+  outline: none;
+  flex-shrink: 0;
   z-index: 1100;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .menu-hamburger span {
   display: block;
-  width: 100%;
+  width: 22px;
   height: 2px;
+  flex-shrink: 0;
   background: var(--nero);
   transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 }
@@ -1509,7 +1522,7 @@ h1, h2, h3, h4 {
 
 @media (max-width: 860px) {
   .nav,
-  .azioni-header .btn-outline {
+  .azioni-header .btn {
     display: none;
   }
 
@@ -1525,13 +1538,38 @@ h1, h2, h3, h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 34px;
+    gap: 28px;
     z-index: 1050;
+    padding: 90px 24px 40px;
+    overflow-y: auto;
   }
 
   .nav.aperto a {
     color: var(--bianco);
     font-size: 1.3rem;
+  }
+
+  .nav.aperto .nav-azioni-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 280px;
+    margin-top: 10px;
+  }
+
+  .nav.aperto .nav-azioni-mobile .btn {
+    width: 100%;
+  }
+
+  .nav.aperto .nav-azioni-mobile .btn-outline {
+    border-color: var(--bianco);
+    color: var(--bianco);
+  }
+
+  .nav.aperto .nav-azioni-mobile .btn-outline:hover {
+    background: var(--bianco);
+    color: var(--verde-scuro);
   }
 
   .elenco-voci {
@@ -1573,6 +1611,27 @@ h1, h2, h3, h4 {
 
   .hero::before,
   .hero::after {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 130px 0 60px;
+  }
+
+  .hero .contenitore {
+    padding-top: 0;
+  }
+
+  .hero-azioni {
+    margin-bottom: 34px;
+  }
+
+  .hero-info {
+    gap: 16px;
+  }
+
+  .scroll-giu {
     display: none;
   }
 
