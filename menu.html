@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Menu | Bella Napoli — Pizzeria Napoletana a Mantova</title>
+<meta name="description" content="Scopri il menu completo di Bella Napoli: pizze classiche e speciali, antipasti, calzoni, primi, secondi e dolci della tradizione napoletana, a Mantova." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%23b3221c'/%3E%3Cpath d='M12 4l6 14H6z' fill='%23f4d78e'/%3E%3Ccircle cx='10' cy='11' r='1.1' fill='%23b3221c'/%3E%3Ccircle cx='13.5' cy='13' r='1.1' fill='%23b3221c'/%3E%3Ccircle cx='11.5' cy='15.5' r='1' fill='%23b3221c'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="contenitore">
+    <a href="index.html" class="logo">
+      <svg class="icona-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9.2"/><path d="M12 4.6 17.6 16H6.4z"/></svg>
+      Bella Napoli
+    </a>
+    <nav class="nav" id="nav-principale">
+      <a href="index.html">Home</a>
+      <a href="chi-siamo.html">Chi Siamo</a>
+      <a href="menu.html" class="attivo">Menu</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+    <div class="azioni-header">
+      <a href="tel:+390376222675" class="btn btn-outline">Chiama Ora</a>
+      <a href="contatti.html#prenota" class="btn btn-primario">Prenota un Tavolo</a>
+      <button class="menu-hamburger" id="hamburger" aria-label="Apri il menu di navigazione" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="pagina-hero">
+    <div class="contenitore">
+      <p class="etichetta">Il nostro menu</p>
+      <h1>Sapori autentici, ricette di famiglia</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> / Menu</p>
+    </div>
+  </section>
+
+  <section class="sezione sezione-crema" style="padding-bottom:60px;">
+    <div class="contenitore">
+
+      <div class="filtri-menu">
+        <button class="filtro-btn attivo" data-filtro="tutti">Tutto il Menu</button>
+        <button class="filtro-btn" data-filtro="antipasti">Antipasti</button>
+        <button class="filtro-btn" data-filtro="classiche">Pizze Classiche</button>
+        <button class="filtro-btn" data-filtro="speciali">Pizze Speciali</button>
+        <button class="filtro-btn" data-filtro="calzoni">Calzoni</button>
+        <button class="filtro-btn" data-filtro="primi">Primi &amp; Secondi</button>
+        <button class="filtro-btn" data-filtro="dolci">Dolci &amp; Bevande</button>
+      </div>
+
+      <!-- ANTIPASTI -->
+      <div class="gruppo-menu" data-categoria-menu="antipasti">
+        <div class="gruppo-menu-titolo"><h2>Antipasti</h2></div>
+        <div class="elenco-voci">
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Bruschetta Napoletana</h4><p>Pomodorini freschi, aglio, basilico e olio EVO</p></div>
+            <div class="voce-menu-prezzo">€ 5,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Arancini alla Napoletana <span class="tag-piccante">(2 pz)</span></h4><p>Riso, ragù, piselli e mozzarella</p></div>
+            <div class="voce-menu-prezzo">€ 5,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Crocchè di Patate <span class="tag-veg">(2 pz)</span></h4><p>Patate, provola e prezzemolo, fritti al momento</p></div>
+            <div class="voce-menu-prezzo">€ 4,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Frittatine di Pasta <span>(2 pz)</span></h4><p>Pasta, besciamella, prosciutto e piselli</p></div>
+            <div class="voce-menu-prezzo">€ 4,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Fiori di Zucca Ripieni</h4><p>Ripieni di mozzarella e acciuga, in pastella leggera</p></div>
+            <div class="voce-menu-prezzo">€ 6,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Tagliere Bella Napoli</h4><p>Selezione di salumi e formaggi tipici campani</p></div>
+            <div class="voce-menu-prezzo">€ 12,00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PIZZE CLASSICHE -->
+      <div class="gruppo-menu" data-categoria-menu="classiche">
+        <div class="gruppo-menu-titolo"><h2>Pizze Classiche</h2></div>
+        <div class="elenco-voci">
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Marinara <span class="tag-veg">veg</span></h4><p>Pomodoro, aglio, origano e olio EVO</p></div>
+            <div class="voce-menu-prezzo">€ 5,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Margherita <span class="tag-veg">veg</span></h4><p>Pomodoro San Marzano, fior di latte, basilico</p></div>
+            <div class="voce-menu-prezzo">€ 7,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Napoli</h4><p>Pomodoro, mozzarella, acciughe e origano</p></div>
+            <div class="voce-menu-prezzo">€ 7,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Diavola <span class="tag-piccante">piccante</span></h4><p>Pomodoro, fior di latte, salame piccante calabrese</p></div>
+            <div class="voce-menu-prezzo">€ 8,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Prosciutto e Funghi</h4><p>Pomodoro, fior di latte, prosciutto cotto, champignon</p></div>
+            <div class="voce-menu-prezzo">€ 8,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Capricciosa</h4><p>Pomodoro, mozzarella, prosciutto cotto, funghi, carciofi</p></div>
+            <div class="voce-menu-prezzo">€ 9,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Quattro Stagioni</h4><p>Prosciutto, funghi, carciofi e olive, divisa in quattro</p></div>
+            <div class="voce-menu-prezzo">€ 9,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Quattro Formaggi <span class="tag-veg">veg</span></h4><p>Fior di latte, gorgonzola, parmigiano, provola affumicata</p></div>
+            <div class="voce-menu-prezzo">€ 9,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Wurstel e Patatine</h4><p>Pomodoro, fior di latte, wurstel e patatine croccanti</p></div>
+            <div class="voce-menu-prezzo">€ 7,50</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PIZZE SPECIALI -->
+      <div class="gruppo-menu" data-categoria-menu="speciali">
+        <div class="gruppo-menu-titolo"><h2>Pizze Speciali della Casa</h2></div>
+        <div class="elenco-voci">
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Bella Napoli</h4><p>Pomodoro San Marzano, bufala campana DOP, origano di montagna</p></div>
+            <div class="voce-menu-prezzo">€ 11,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Nduja e Burrata <span class="tag-piccante">piccante</span></h4><p>Nduja calabrese, burrata pugliese, pomodorini datterini</p></div>
+            <div class="voce-menu-prezzo">€ 12,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Parmigiana</h4><p>Melanzane fritte, pomodoro, fior di latte, parmigiano</p></div>
+            <div class="voce-menu-prezzo">€ 10,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Tartufo e Porcini <span class="tag-veg">veg</span></h4><p>Crema di tartufo, funghi porcini, fior di latte, grana</p></div>
+            <div class="voce-menu-prezzo">€ 13,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Mari e Monti</h4><p>Gamberetti, funghi champignon, mozzarella, prezzemolo</p></div>
+            <div class="voce-menu-prezzo">€ 12,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Vegetariana <span class="tag-veg">veg</span></h4><p>Verdure grigliate di stagione, fior di latte</p></div>
+            <div class="voce-menu-prezzo">€ 9,50</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CALZONI -->
+      <div class="gruppo-menu" data-categoria-menu="calzoni">
+        <div class="gruppo-menu-titolo"><h2>Calzoni</h2></div>
+        <div class="elenco-voci">
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Calzone Classico</h4><p>Mozzarella, pomodoro, prosciutto cotto, funghi</p></div>
+            <div class="voce-menu-prezzo">€ 9,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Calzone Ripieno</h4><p>Ricotta, salame napoletano, mozzarella, pomodoro</p></div>
+            <div class="voce-menu-prezzo">€ 9,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Calzone Bella Napoli</h4><p>Bufala DOP, prosciutto crudo, rucola e scaglie di grana</p></div>
+            <div class="voce-menu-prezzo">€ 11,00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRIMI -->
+      <div class="gruppo-menu" data-categoria-menu="primi">
+        <div class="gruppo-menu-titolo"><h2>Primi Piatti</h2></div>
+        <div class="elenco-voci">
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Gnocchi alla Sorrentina <span class="tag-veg">veg</span></h4><p>Pomodoro fresco, fior di latte e basilico gratinati al forno</p></div>
+            <div class="voce-menu-prezzo">€ 9,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Paccheri allo Scarpariello</h4><p>Pomodoro, provola affumicata, basilico</p></div>
+            <div class="voce-menu-prezzo">€ 10,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Spaghetti alle Vongole</h4><p>Vongole veraci, aglio, prezzemolo, vino bianco</p></div>
+            <div class="voce-menu-prezzo">€ 13,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Rigatoni alla Genovese</h4><p>Lunga cottura di cipolle e carne, ricetta della tradizione napoletana</p></div>
+            <div class="voce-menu-prezzo">€ 9,50</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECONDI -->
+      <div class="gruppo-menu" data-categoria-menu="primi">
+        <div class="gruppo-menu-titolo"><h2>Secondi Piatti</h2></div>
+        <div class="elenco-voci">
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Scaloppine al Limone</h4><p>Fettine di vitello, salsa al limone e burro</p></div>
+            <div class="voce-menu-prezzo">€ 12,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Grigliata Mista di Carne</h4><p>Selezione di carni alla griglia con contorno</p></div>
+            <div class="voce-menu-prezzo">€ 14,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Frittura di Paranza</h4><p>Pesce misto fritto croccante, con limone</p></div>
+            <div class="voce-menu-prezzo">€ 15,00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOLCI -->
+      <div class="gruppo-menu" data-categoria-menu="dolci">
+        <div class="gruppo-menu-titolo"><h2>Dolci della Tradizione</h2></div>
+        <div class="elenco-voci">
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Tiramisù della Casa</h4><p>Preparato ogni giorno secondo la ricetta della casa</p></div>
+            <div class="voce-menu-prezzo">€ 5,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Sfogliatella Napoletana</h4><p>Croccante fuori, ricotta e canditi dentro</p></div>
+            <div class="voce-menu-prezzo">€ 4,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Babà al Rum</h4><p>Il dolce simbolo di Napoli, soffice e bagnato al rum</p></div>
+            <div class="voce-menu-prezzo">€ 4,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Torta Caprese</h4><p>Cioccolato fondente e mandorle, senza glutine</p></div>
+            <div class="voce-menu-prezzo">€ 5,00</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BEVANDE -->
+      <div class="gruppo-menu" data-categoria-menu="dolci">
+        <div class="gruppo-menu-titolo"><h2>Bevande</h2></div>
+        <div class="elenco-voci">
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Acqua Naturale / Frizzante <span>(75cl)</span></h4></div>
+            <div class="voce-menu-prezzo">€ 2,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Bibita in Lattina</h4></div>
+            <div class="voce-menu-prezzo">€ 3,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Birra alla Spina <span>(0,4L)</span></h4></div>
+            <div class="voce-menu-prezzo">€ 4,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Birra Artigianale <span>(33cl)</span></h4></div>
+            <div class="voce-menu-prezzo">€ 4,50</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Vino della Casa <span>(calice)</span></h4></div>
+            <div class="voce-menu-prezzo">€ 4,00</div>
+          </div>
+          <div class="voce-menu">
+            <div class="voce-menu-testo"><h4>Caffè</h4></div>
+            <div class="voce-menu-prezzo">€ 1,50</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="nota-menu">I prezzi indicati sono indicativi e possono variare. Per allergie e intolleranze vi preghiamo di avvisare il personale di sala. Coperto e servizio esclusi.</p>
+    </div>
+  </section>
+
+  <section class="cta-banda">
+    <div class="contenitore">
+      <div>
+        <h2>Hai voglia di venire a trovarci?</h2>
+        <p>Prenota un tavolo o ordina la tua pizza da asporto.</p>
+      </div>
+      <div class="azioni">
+        <a href="contatti.html#prenota" class="btn btn-secondario" style="border-color: var(--bianco); color: var(--bianco);">Prenota un Tavolo</a>
+        <a href="tel:+390376222675" class="btn" style="background: var(--bianco); color: var(--rosso-scuro);">Chiama: 0376 222675</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="contenitore">
+    <div class="footer-griglia">
+      <div>
+        <a href="index.html" class="logo">
+          <svg class="icona-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9.2"/><path d="M12 4.6 17.6 16H6.4z"/></svg>
+          Bella Napoli
+        </a>
+        <p class="footer-descrizione">Pizzeria e ristorante napoletano nel cuore di Mantova. Forno a legna, ingredienti selezionati e tanta passione dal 1994.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8.5h2V5.2h-2.4C12.5 5.2 11 6.7 11 9v2.3H9V15h2v6.5h3V15h2.3l.7-3.7h-3V9.3c0-.5.4-.8.9-.8Z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/393277313774" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12a8 8 0 1 1-3.6-6.7"/><path d="M20 12a8 8 0 0 0-8-8"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6l1.2-2c-1 .3-3-.4-4-1.5s-1.8-3-1.5-4l-2-1.2c-.5.6.3 2.7.3 2.7Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Link Rapidi</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="chi-siamo.html">Chi Siamo</a>
+          <a href="menu.html">Menu</a>
+          <a href="contatti.html">Contatti</a>
+          <a href="contatti.html#prenota">Prenota un Tavolo</a>
+        </div>
+      </div>
+      <div>
+        <h4>Orari di Apertura</h4>
+        <ul class="footer-orari">
+          <li><span>Lunedì</span><span>12:00–14:30 / 19:00–23:00</span></li>
+          <li><span>Martedì</span><span>Chiuso</span></li>
+          <li><span>Mer – Dom</span><span>12:00–14:30 / 19:00–23:00</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul class="footer-contatti">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.4 10.9c0 6-8.4 11.3-8.4 11.3S3.6 16.9 3.6 10.9a8.4 8.4 0 1 1 16.8 0Z"/><circle cx="12" cy="10.6" r="2.6"/></svg>
+            <span>Piazza Felice Cavallotti, 14<br>46100 Mantova (MN)</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 16.9v2.2a2 2 0 0 1-2.2 2A18 18 0 0 1 3 5.2 2 2 0 0 1 5 3h2.2a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.2 10.6a14 14 0 0 0 5.2 5.2l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2Z"/></svg>
+            <a href="tel:+390376222675">0376 222675</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 16.9v2.2a2 2 0 0 1-2.2 2A18 18 0 0 1 3 5.2 2 2 0 0 1 5 3h2.2a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.2 10.6a14 14 0 0 0 5.2 5.2l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2Z"/></svg>
+            <a href="tel:+393277313774">327 731 3774</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+            <a href="mailto:bellanapolimn@virgilio.it">bellanapolimn@virgilio.it</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-basso">
+      <span>&copy; <span data-anno-corrente></span> Bella Napoli — Pizzeria &amp; Ristorante, Mantova. Tutti i diritti riservati.</span>
+      <span>P.IVA 00000000000 — Sito realizzato con cura per i nostri clienti</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/393277313774" class="whatsapp-flottante" aria-label="Scrivici su WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12a8 8 0 1 1-3.6-6.7"/><path d="M20 12a8 8 0 0 0-8-8"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6l1.2-2c-1 .3-3-.4-4-1.5s-1.8-3-1.5-4l-2-1.2c-.5.6.3 2.7.3 2.7Z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
