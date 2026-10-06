@@ -2,6 +2,7 @@
 
 Sito statico bilingue (EN `index.html`, IT `it.html`) per Giorgio Demurtas, ingegnere (eolico, elettronica, inseguitori solari). Nessuna build.
 
+- `shop.html` / `negozio.html` — shop (cart in localStorage, order request sent by email, prices "on request")
 - `css/style.css`, `js/main.js` condivisi
 - Contenuti ricavati da risultati pubblici di ingdemurtas.it: **verificali** e completa foto/logo, link ai prodotti, telefono.
 - Il form apre un'email precompilata (`mailto:`), nessun backend.
