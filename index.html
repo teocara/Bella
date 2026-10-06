@@ -1,163 +1,60 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ing. Demurtas | Ingegneria e Consulenza Tecnica</title>
-<meta name="description" content="Ing. Demurtas: studio di ingegneria per progettazione, direzione lavori, sicurezza, pratiche edilizie e consulenza tecnica. Richiedi un preventivo." />
+<title>Giorgio Demurtas | Engineer — Wind Energy, Solar Tracking & Electronics</title>
+<meta name="description" content="Giorgio Demurtas, PhD in Wind Energy (DTU). Electronics design, solar tracker controllers (EasyTrack, MiniTrack), wind turbines and photovoltaic plants." />
 <meta name="theme-color" content="#0b1220" />
+<link rel="alternate" hreflang="en" href="index.html" /><link rel="alternate" hreflang="it" href="it.html" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1220'/%3E%3Cpath d='M9 9h8a7 7 0 010 14H9z' fill='none' stroke='%2338bdf8' stroke-width='3'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-
+<body data-ok="Your email app will open to confirm sending." data-err="Please fill in all fields correctly." data-subj="Website enquiry" data-open="Open menu" data-close="Close menu">
 <header class="header" id="header">
   <div class="wrap bar">
-    <a href="#top" class="logo"><span class="logo-mark">D</span> Ing. Demurtas</a>
-    <nav class="nav" id="nav" aria-label="Principale">
-      <a href="#servizi">Servizi</a>
-      <a href="#metodo">Metodo</a>
-      <a href="#progetti">Progetti</a>
-      <a href="#chi-sono">Chi sono</a>
-      <a href="#contatti" class="btn btn-sm">Contattami</a>
+    <a href="#top" class="logo"><span class="logo-mark">D</span> ingDemurtas</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#expertise">Expertise</a><a href="#products">Products</a><a href="#projects">Projects</a><a href="#about">About</a>
+      <a href="#contact" class="btn btn-sm">Contact</a>
+      <a href="it.html" class="lang" hreflang="it">IT</a>
     </nav>
-    <button class="burger" id="burger" aria-label="Apri il menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
   </div>
 </header>
-
 <main id="top">
   <section class="hero">
     <div class="grid-bg" aria-hidden="true"></div>
     <div class="wrap hero-in">
-      <p class="eyebrow reveal">Studio di ingegneria</p>
-      <h1 class="reveal">Soluzioni tecniche <span class="grad">precise</span>, dal progetto al cantiere.</h1>
-      <p class="lead reveal">Progettazione, direzione lavori, sicurezza e pratiche: un unico referente che trasforma le idee in opere solide, a norma e nei tempi concordati.</p>
-      <div class="cta reveal">
-        <a href="#contatti" class="btn">Richiedi un preventivo</a>
-        <a href="#progetti" class="btn btn-ghost">Vedi i progetti</a>
-      </div>
-      <dl class="stats reveal">
-        <div><dt data-count="15" data-suffix="+">0</dt><dd>anni di esperienza</dd></div>
-        <div><dt data-count="200" data-suffix="+">0</dt><dd>progetti seguiti</dd></div>
-        <div><dt data-count="100" data-suffix="%">0</dt><dd>pratiche a norma</dd></div>
-      </dl>
+      <p class="eyebrow reveal">Electronics · Wind · Solar</p>
+      <h1 class="reveal">Engineering for <span class="grad">renewable energy</span>, from sensor to system.</h1>
+      <p class="lead reveal">I design electronics, control systems and wind and solar plants. PhD in Wind Energy from the Technical University of Denmark, with hands-on experience from the lab to the field.</p>
+      <div class="cta reveal"><a href="#contact" class="btn">Get in touch</a><a href="#products" class="btn btn-ghost">See products</a></div>
+      <dl class="stats reveal"><div><dt>PhD</dt><dd>Wind Energy, DTU</dd></div><div><dt data-count="20">20</dt><dd>kW wind turbine designed</dd></div><div><dt data-count="12">12</dt><dd>PV plants installed</dd></div></dl>
     </div>
   </section>
-
-  <section class="section" id="servizi">
-    <div class="wrap">
-      <p class="eyebrow">Servizi</p>
-      <h2>Tutto ciò che serve a un progetto, in un solo studio</h2>
-      <div class="cards">
-        <article class="card reveal">
-          <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>
-          <h3>Progettazione strutturale</h3>
-          <p>Calcolo e progetto di strutture in c.a., acciaio e legno, nuove costruzioni e ristrutturazioni.</p>
-        </article>
-        <article class="card reveal">
-          <svg viewBox="0 0 24 24"><path d="M4 20l5-5 4 4 7-9M4 4v16h16"/></svg>
-          <h3>Direzione lavori</h3>
-          <p>Controllo di qualità, tempi e costi in cantiere, con report chiari e tracciabili.</p>
-        </article>
-        <article class="card reveal">
-          <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
-          <h3>Sicurezza nei cantieri</h3>
-          <p>Coordinamento della sicurezza in fase di progetto ed esecuzione (D.Lgs. 81/08), piani POS e PSC.</p>
-        </article>
-        <article class="card reveal">
-          <svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h7"/></svg>
-          <h3>Pratiche e certificazioni</h3>
-          <p>Titoli edilizi, SCIA, collaudi, certificazioni energetiche e rapporti con gli enti.</p>
-        </article>
-        <article class="card reveal">
-          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg>
-          <h3>Perizie e consulenze</h3>
-          <p>Verifiche statiche, valutazioni tecniche e perizie giurate per privati, imprese e tribunali.</p>
-        </article>
-        <article class="card reveal">
-          <svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
-          <h3>Efficienza energetica</h3>
-          <p>Diagnosi, riqualificazione e pratiche per bonus e incentivi, per ridurre consumi e costi.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section alt" id="metodo">
-    <div class="wrap">
-      <p class="eyebrow">Metodo</p>
-      <h2>Un percorso semplice e trasparente</h2>
-      <ol class="steps">
-        <li class="reveal"><span>01</span><h3>Ascolto</h3><p>Sopralluogo e analisi delle esigenze, senza impegno.</p></li>
-        <li class="reveal"><span>02</span><h3>Proposta</h3><p>Preventivo chiaro con tempi e costi definiti in anticipo.</p></li>
-        <li class="reveal"><span>03</span><h3>Progetto</h3><p>Sviluppo tecnico, verifiche e gestione delle autorizzazioni.</p></li>
-        <li class="reveal"><span>04</span><h3>Realizzazione</h3><p>Assistenza in cantiere fino al collaudo e alla consegna.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section" id="progetti">
-    <div class="wrap">
-      <p class="eyebrow">Progetti</p>
-      <h2>Alcuni ambiti di intervento</h2>
-      <div class="projects">
-        <figure class="proj p1 reveal"><figcaption><b>Residenziale</b>Nuove costruzioni e ristrutturazioni</figcaption></figure>
-        <figure class="proj p2 reveal"><figcaption><b>Industriale</b>Capannoni e adeguamenti</figcaption></figure>
-        <figure class="proj p3 reveal"><figcaption><b>Recupero</b>Consolidamento e miglioramento sismico</figcaption></figure>
-      </div>
-      <p class="note">Sostituisci i riquadri con foto e descrizioni dei lavori reali.</p>
-    </div>
-  </section>
-
-  <section class="section alt" id="chi-sono">
-    <div class="wrap about">
-      <div class="reveal">
-        <p class="eyebrow">Chi sono</p>
-        <h2>Competenza tecnica, rapporto diretto</h2>
-        <p>Sono l'Ing. Demurtas e mi occupo di ingegneria civile e consulenza tecnica per privati, imprese e pubbliche amministrazioni. Ogni incarico è seguito personalmente, dalla prima consulenza alla chiusura della pratica.</p>
-        <ul class="ticks">
-          <li>Iscritto all'Ordine degli Ingegneri</li>
-          <li>Aggiornamento professionale continuo</li>
-          <li>Comunicazione chiara, nessuna sorpresa sui costi</li>
-        </ul>
-      </div>
-      <div class="portrait reveal" aria-hidden="true"><span>D</span></div>
-    </div>
-  </section>
-
-  <section class="section" id="contatti">
-    <div class="wrap contact">
-      <div class="reveal">
-        <p class="eyebrow">Contatti</p>
-        <h2>Parliamo del tuo progetto</h2>
-        <p>Raccontami cosa ti serve: ti rispondo entro un giorno lavorativo.</p>
-        <ul class="info">
-          <li><b>Email</b><a href="mailto:info@ingdemurtas.it">info@ingdemurtas.it</a></li>
-          <li><b>Telefono</b><a href="tel:+390000000000">+39 000 000 0000</a></li>
-          <li><b>Studio</b>Via Esempio 1, Città (da aggiornare)</li>
-        </ul>
-      </div>
-      <form class="form reveal" id="form" novalidate>
-        <label>Nome<input name="nome" required autocomplete="name" /></label>
-        <label>Email<input name="email" type="email" required autocomplete="email" /></label>
-        <label>Messaggio<textarea name="msg" rows="4" required></textarea></label>
-        <button class="btn" type="submit">Invia richiesta</button>
-        <p class="status" id="status" role="status"></p>
-      </form>
-    </div>
-  </section>
+  <section class="section" id="expertise"><div class="wrap"><p class="eyebrow">Expertise</p><h2>What I work on</h2><div class="cards"><article class="card reveal"><svg viewBox="0 0 24 24"><path d="M12 12V3M12 12l7 4M12 12l-7 4M10 21h4M12 12v9"/></svg><h3>Wind energy</h3><p>Turbine performance measurements, wind and meteorological data analysis, wind farm design support.</p></article><article class="card reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg><h3>Solar tracking</h3><p>Control systems for one and two-axis trackers, including CSP, based on an innovative sun direction sensor.</p></article><article class="card reveal"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg><h3>Electronics design</h3><p>Embedded hardware and firmware, sensors and control electronics from prototype to production.</p></article><article class="card reveal"><svg viewBox="0 0 24 24"><path d="M3 17l3-9h12l3 9zM12 8v9M7 12h10"/></svg><h3>Photovoltaic plants</h3><p>Design and installation of PV plants up to 20 kW.</p></article></div></div></section>
+  <section class="section alt" id="products"><div class="wrap"><p class="eyebrow">Products</p><h2>Control systems by Startak</h2><div class="cards"><article class="card prod reveal"><h3>EasyTrack</h3><span class="tag">1 and 2-axis solar tracking controller</span><p>A competitive control system for solar trackers, built around an innovative solar direction sensor.</p></article><article class="card prod reveal"><h3>MiniTrack</h3><span class="tag">Compact solar tracker controller</span><p>A compact, low-cost controller for small solar tracking applications.</p></article><article class="card prod reveal"><h3>20 kW wind turbine</h3><span class="tag">Designed in Denmark, built in Italy</span><p>A small wind turbine designed by Giorgio Demurtas and realized in Italy.</p></article></div></div></section>
+  <section class="section" id="projects"><div class="wrap"><p class="eyebrow">Projects</p><h2>Recent work</h2><div class="projects"><figure class="proj p1 reveal"><figcaption><b>Wind turbine testing</b>DTU Wind Energy — performance measurements on large turbines</figcaption></figure><figure class="proj p2 reveal"><figcaption><b>Wind farm design</b>Alstom Wind (now GE), Barcelona — meteorological and turbine data analysis</figcaption></figure><figure class="proj p3 reveal"><figcaption><b>Photovoltaic plants</b>Twelve plants up to 20 kW with Piccolecentrali Srl</figcaption></figure></div></div></section>
+  <section class="section alt" id="about"><div class="wrap about">
+    <div class="reveal"><p class="eyebrow">About</p><h2>Engineer, researcher, maker</h2><p>I am an Italian engineer passionate about electronics and renewable energy. After studying in Cagliari I moved to Denmark, where I completed my MSc and PhD in Wind Energy, and I now develop control systems for solar and wind applications.</p><ul class="ticks"><li>PhD Wind Energy, Technical University of Denmark (2016)</li><li>MSc Wind Energy, DTU (2012)</li><li>BSc Electrical Engineering, University of Cagliari (2009)</li><li>Diploma in Electrical Engineering and Automation, ITIS G. Marconi, Cagliari (2005)</li></ul></div>
+    <div class="portrait reveal" aria-hidden="true"><span>GD</span></div>
+  </div></section>
+  <section class="section" id="contact"><div class="wrap contact">
+    <div class="reveal"><p class="eyebrow">Contact</p><h2>Let’s talk</h2><p>Questions about products or a collaboration? Write to me.</p>
+      <ul class="info"><li><b>Email</b><a href="mailto:giorgio@ingdemurtas.it">giorgio@ingdemurtas.it</a></li><li><b>Location</b>Sardinia, Italy</li></ul></div>
+    <form class="form reveal" id="form" novalidate>
+      <label>Name<input name="nome" required autocomplete="name" /></label>
+      <label>Email<input name="email" type="email" required autocomplete="email" /></label>
+      <label>Message<textarea name="msg" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Send message</button><p class="status" id="status" role="status"></p>
+    </form>
+  </div></section>
 </main>
-
-<footer class="footer">
-  <div class="wrap foot">
-    <span>© <span id="year"></span> Ing. Demurtas · P.IVA 00000000000</span>
-    <a href="#top">Torna su ↑</a>
-  </div>
-</footer>
-
+<footer class="footer"><div class="wrap foot"><span>© <span id="year"></span> Giorgio Demurtas</span><a href="#top">Back to top ↑</a></div></footer>
 <script src="js/main.js"></script>
 </body>
 </html>

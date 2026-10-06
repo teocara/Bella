@@ -87,3 +87,7 @@ h3{font-size:1.1rem;margin-bottom:.4rem}
  .stats{gap:1.8rem}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+
+.lang{border:1px solid var(--line);border-radius:8px;padding:.25rem .6rem;font-size:.8rem;font-weight:600}.nav a.lang:hover{border-color:var(--acc)}
+.tag{display:inline-block;color:var(--acc);font-size:.8rem;font-weight:600;margin-bottom:.7rem}
+.portrait span{letter-spacing:-.04em}

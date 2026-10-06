@@ -1,5 +1,5 @@
 (() => {
-  const EMAIL = 'info@ingdemurtas.it';
+  const EMAIL = 'giorgio@ingdemurtas.it';
   const $ = (s) => document.querySelector(s);
   const header = $('#header'), nav = $('#nav'), burger = $('#burger');
 
@@ -9,7 +9,7 @@
   const setMenu = (open) => {
     nav.classList.toggle('open', open);
     burger.setAttribute('aria-expanded', open);
-    burger.setAttribute('aria-label', open ? 'Chiudi il menu' : 'Apri il menu');
+    burger.setAttribute('aria-label', open ? document.body.dataset.close : document.body.dataset.open);
   };
   burger.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
   nav.addEventListener('click', (e) => e.target.closest('a') && setMenu(false));
@@ -42,11 +42,11 @@
       f.classList.toggle('invalid', bad);
       ok = ok && !bad;
     });
-    if (!ok) { status.textContent = 'Compila correttamente tutti i campi.'; return; }
+    if (!ok) { status.textContent = document.body.dataset.err; return; }
     const d = new FormData(form);
     const body = `${d.get('msg')}\n\n— ${d.get('nome')} (${d.get('email')})`;
-    location.href = `mailto:${EMAIL}?subject=${encodeURIComponent('Richiesta preventivo')}&body=${encodeURIComponent(body)}`;
-    status.textContent = 'Si apre il tuo client email per confermare l\'invio.';
+    location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(document.body.dataset.subj)}&body=${encodeURIComponent(body)}`;
+    status.textContent = document.body.dataset.ok;
   });
 
   $('#year').textContent = new Date().getFullYear();
